@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightgrey;
+    min-width: 20px;
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 20px 20px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: blue;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: grey;}
+</style>
+</head>
+<div class="dropdown">
+<a class="dropdown-content" href="https://www.codehs.com">CodeHs</a>
+<button class="dropbtn">Search Engines</button>
+<div class="dropdown-content">
+    <a href="https://www.bing.com">Google</a>
+<a href="https://www.google.com">Bing</a>
+<a href="https://www.Yahoo.com">Yahoo</a>
+</div>
+</div>
+</body>
+</html>
