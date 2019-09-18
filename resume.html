@@ -1,66 +1,80 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Home</title>
-<style>
-  .navbar {
-    list-style:none;
-    background-color:black;
-    overflow:hidden;
-    padding:0;
-  }
-  .navbar a, .dropdown div{
-    text-decoration:none;
-    color:white;
-    font-size:25px;
-    padding:16px;
-    display:inline:block;
-  }
-  .navbar li {
-    float: left;
-  }
-  .navbar li:hover {
-    background-color:pink;
-  }
-  .dropdown {
-    color:white;
-  }
-  .dropdowncontent {
-    list-style:none;
-    padding:0;
-    display:none;
-  }
-  .dropdowncontent li {
-    float:none;
-  }
-  .dropdown:hover .dropdowncontent{
-    display:block;
-  }
-</style>
-</head>
-<body>
-  <ul class="navbar">
-    <li>
-      <a href="index.html">Home</a>
-    </li>
-    <li>
-      <a href="resume.html">Resume</a>
-    </li>
-    <li class="dropdown">
-      <div class="more">Projects</div>
-      <ul class="dropdowncontent">
-        <li>
-          <a href="#">Project 1</a>
-        </li>
-        <li>
-          <a href="#">Project 2</a>
-        </li>
-        <li>
-          <a href="#">Project 3</a>
-        </li>
-      </ul>
-    </li>
-    <h1>Resume</h1>
-  </ul>
-</body>
+  <head>
+  <title>Home</title>
+  <style>
+
+    .navbar{
+      list-style: none;
+      background-color: black;
+      overflow: hidden;
+      padding: 0;
+    }
+    
+    .navbar a, .dropdown div{
+      text-decoration: none;
+      color: white;
+      font-size: 24px;
+      padding: 16px;
+      display: inline-block;
+    }
+    .navbar li{
+      float: left;
+    }
+
+    .navbar li:hover{
+      background-color: pink;
+    }
+
+    .dropdown-content{
+      list-style: none;
+      padding: 0;
+      display: none;
+    }
+
+    .dropdown-content li{
+      float:none;
+    }
+
+    .dropdown:hover .dropdown-content{
+      display: block;
+    }
+    .center {
+      text-align:center;
+    }
+    .contact li {
+      font-size:25px;
+      list-style: none;
+      padding-right:15px;
+    }
+    .contact {
+      font-size:40px;
+    }
+
+  </style>
+
+  </head>
+  <body>
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="contactme.html">Contact Me</a></li>
+      <li class = "dropdown">
+        <div>Projects</div>
+        <ul class="dropdown-content">
+          <li><a href="#">Project 1</a></li>
+          <li><a href="#">Project 2</a></li>
+          <li><a href="#">Project 3</a></li>
+        </ul>
+      </li>
+
+    </ul>
+<h1 class="center">Resume</h1>
+<ul class="contact"> Contact Information
+  <li>Phone number: (760) 362-9592</li>
+</ul>
+
+
+  </body>
 </html>
