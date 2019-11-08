@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title></title>
+  <style>
+
+    .navbar{
+      list-style: none;
+      background-color: black;
+      overflow: hidden;
+      padding: 0;
+    }
+
+    .navbar a, .dropdown div{
+      text-decoration: none;
+      color: white;
+      font-size: 24px;
+      padding: 16px;
+      display: inline-block;
+    }
+    .navbar li{
+      float: left;
+    }
+
+    .navbar li:hover{
+      background-color: red;
+    }
+
+    .dropdown-content{
+      list-style: none;
+      padding: 0;
+      display: none;
+    }
+
+    .dropdown-content li{
+      float:none;
+    }
+
+    .dropdown:hover .dropdown-content{
+      display: block;
+    }
+    #container{
+        position: absolute;
+        top: 85px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        background-color: green;
+    }
+     #leftpane{
+        width: 56%;
+        height:100%;
+        float: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: red;
+     }
+     #rightpane{
+        width: 44%;
+        height: 100%;
+        float: left;
+        background-color: blue;
+     }
+     #storytxt{
+        position: absolute;
+        bottom: 50px;
+        top: 0px;
+        left: 56%;
+        right: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: pink;
+     }
+     #choices{
+        position: absolute;
+        bottom: 0px;
+        left: 56%;
+        right: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: yellow;
+     }
+     #b1{
+        display: inline-block;
+        background-color: white;
+        color: black;
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 8px;
+        text-decoration:none;
+        margin: 8px;
+     }
+     #b2{
+        display: inline-block;
+        background-color: white;
+        color: black;
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 8px;
+        text-decoration:none;
+        margin: 8px;
+
+
+     }
+     #b3{
+        display: inline-block;
+        background-color: white;
+        color: black;
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 8px;
+        text-decoration:none;
+        margin: 8px;
+
+     }
+     #b4{
+        display: inline-block;
+        background-color: white;
+        color: black;
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 8px;
+        text-decoration:none;
+        margin: 8px;
+
+     }
+  </style>
+
+  </head>
+  <body>
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="contactme.html">Contact Me</a></li>
+      <li class = "dropdown">
+        <div>Projects</div>
+        <ul class="dropdown-content">
+          <li><a href="#">Project 1</a></li>
+          <li><a href="#">Project 2</a></li>
+          <li><a href="#">Project 3</a></li>
+        </ul>
+      </li>
+    </ul>
+    <div  id='container'>
+        <div id='leftpane'>
+        </div>
+        <div id='rightpane'>
+            <div id='storytxt'>
+
+            </div>
+            <div id='choices'>
+                <a id='b1' href="#">Choice 1</a>
+                <a id='b2' href="#">Choice 2</a>
+                <a id='b3' href="#">Choice 3</a>
+                <a id='b4' href="#">Choice 4</a>
+
+            </div>
+        </div>
+    </div>
+
+  </body>
+</html>
